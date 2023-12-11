@@ -1,1 +1,1 @@
-# MK_Docs
+# This is the MKDocs for the project of Group7
