@@ -1,4 +1,4 @@
-# Introduction to My Python Package
+# Introduction to Movie Recommendation Python Package
 
 ## Overview
 This package is designed to simulate a movie database environment. It includes modules for generating mock data, managing database interactions, handling API requests, recommending movies, and setting up the entire application. It's an ideal toolkit for developers working on movie-related applications, especially in a testing or development environment.
@@ -17,7 +17,4 @@ This package is primarily targeted at developers and testers who need to create 
 
 ## Getting Started
 To get started with this package, clone the repository and install the required dependencies. Detailed instructions are provided in the user guide below.
-
-## Contributions
-Contributions to this package are welcome. Please refer to the contributing guidelines for more information.
 
