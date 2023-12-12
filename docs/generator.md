@@ -54,7 +54,7 @@ Generating User Data
 users = [generate_user(user_id) for user_id in range(1, NUMBER_OF_USERS + 1)]
 users_df = pd.DataFrame(users)
 
-# Save user data to a CSV file
+Save user data to a CSV file
 users_df.to_csv('users.csv', index=False)
 
 
