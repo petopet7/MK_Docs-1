@@ -7,5 +7,7 @@
 
 ## Setting Up the Database
 Run the `setup.py` script to set up the initial database and environment:
+
 ```bash
+
 python setup.py
