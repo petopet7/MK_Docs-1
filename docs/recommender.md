@@ -11,21 +11,6 @@ The `recommender.py` module contains logic for recommending movies to users base
 ## Usage Examples
 
 ```python
-from .database import preview
-
-movie_data = preview('MovieMetadata')
-
-import pandas as pd
-from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import linear_kernel
-
-class MovieRecommender:
-    def __init__(self, movie_data):
-        self.movie_data = movie_data
-        self.movie_data['title'] = self.movie_data['title'].fillna('')  # Fill NA values
-        self.tfidf_matrix = self.create_tfidf_matrix()
-        self.similarity_matrix = self.calculate_similarity()
 
     def create_tfidf_matrix(self):
         # Assuming that you want to calculate similarity based on the movie titles
