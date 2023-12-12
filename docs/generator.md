@@ -15,7 +15,6 @@ The `data_generator` module is designed to create mock data for movies, users, a
 This section shows how the data is generated.
 
 ```python
-
 Declaring Constants
 NUMBER_OF_MOVIES = 450
 NUMBER_OF_LINKS = 270
