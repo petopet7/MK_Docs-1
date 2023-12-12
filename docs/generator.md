@@ -13,6 +13,6 @@ The `data_generator` module is designed to create mock data for movies, users, a
 ## Usage Examples
 Here, you can provide examples of how to use each function. Include example outputs and any important notes about the function behavior.
 
-...
-
 ![WallPaper](https://github.com/petopet7/MK_Docs-1/assets/146641668/545f6b78-0f4e-48a5-bdeb-a817b4650dd4)
+
+...
