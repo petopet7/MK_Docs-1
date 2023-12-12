@@ -165,8 +165,11 @@ The `api.py` module is responsible for handling API requests related to the movi
     # Committing the transaction to save the data in the database
     db.commit()
 
-    
     return recommendations
+##Imput for recommendation
+![image](https://github.com/petopet7/MK_Docs-1/assets/146641668/315ad8de-fd86-4be6-b44c-c8fe3288ae6c)
+##Recommendation outcome
+![image](https://github.com/petopet7/MK_Docs-1/assets/146641668/7d16b332-4030-48d1-8835-160a3b2927b1)
 
 ...
 
