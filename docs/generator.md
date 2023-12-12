@@ -29,7 +29,9 @@ Generating Movie MetaData
 movie_data = [generate_movie_metadata(movie_id) for movie_id in range(NUMBER_OF_MOVIES)]
 movie_df = pd.DataFrame(movie_data)
 movie_df.to_csv('movie_metadata.csv', index=False)
+
 Generating Ratings Data
+
 ratings_data = [generate_ratings(user_id, movie_id) for user_id in range(NUMBER_OF_RATINGS) for movie_id in range(NUMBER_OF_MOVIES)]
 ratings_df = pd.DataFrame(ratings_data)
 ratings_df.to_csv('ratings.csv', index=False)
