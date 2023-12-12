@@ -13,15 +13,14 @@ The `data_generator` module is designed to create mock data for movies, users, a
 ## Usage Example
 
 This section shows how to generate sample data using the package.
-
-**from etl.data_preperation.data_generator import .
-NUMBER_OF_MOVIES = 450**
-
-This is how the data is generated
-
-**movie_data = [generate_movie_metadata(movie_id) for movie_id in range(NUMBER_OF_MOVIES)]
+```python
+from etl.data_preperation.data_generator import .
+NUMBER_OF_MOVIES = 450
+```
+```python
+movie_data = [generate_movie_metadata(movie_id) for movie_id in range(NUMBER_OF_MOVIES)]
 movie_df = pd.DataFrame(movie_data)
-movie_df.to_csv('movie_metadata.csv', index=False)**
+movie_df.to_csv('movie_metadata.csv', index=False)
 
 
 ...
