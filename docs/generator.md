@@ -16,8 +16,7 @@ This section shows how to generate sample data using the package.
 ```python
 from etl.data_preperation.data_generator import .
 NUMBER_OF_MOVIES = 450
-```
-```python
+
 movie_data = [generate_movie_metadata(movie_id) for movie_id in range(NUMBER_OF_MOVIES)]
 movie_df = pd.DataFrame(movie_data)
 movie_df.to_csv('movie_metadata.csv', index=False)
