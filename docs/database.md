@@ -10,10 +10,10 @@ This module handles the database interactions for the movie application. It incl
 ## Usage Examples
 Here is an examples of how to establish a database connection.
 
-```python
-
 import sqlite3
 import pandas as pd
+
+```python
 
 def preview(table):
     # Open a connection to the database file
@@ -42,6 +42,7 @@ def preview(table):
     conn.close()
 
     return df
+```
 
 ...
 
