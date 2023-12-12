@@ -15,3 +15,4 @@ Here, you can provide examples of how to use each function. Include example outp
 
 ...
 
+![WallPaper](https://github.com/petopet7/MK_Docs-1/assets/146641668/545f6b78-0f4e-48a5-bdeb-a817b4650dd4)
