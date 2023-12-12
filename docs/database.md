@@ -5,8 +5,8 @@ This module handles the database interactions for the movie application. It incl
 
 ## Usage
 
-import sqlite3
-import pandas as pd
+    import sqlite3
+    import pandas as pd
 
 
     def preview(table):
