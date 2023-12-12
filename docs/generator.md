@@ -11,6 +11,6 @@ The `data_generator` module is designed to create mock data for movies, users, a
 - `generate_keywords(movie_id)`: Generates random keywords related to a movie.
 
 ## Usage Examples
-Here, you can provide examples of how to use each function. Include example outputs and any important notes about the function 
+Here, you can provide examples of how to use each function. Include example outputs and any important notes about the function behavior.
 
 ...
