@@ -4,11 +4,7 @@ This is the actual model that works for our package.
 ## Introduction
 The `recommender.py` module contains logic for recommending movies to users based on certain criteria like user preferences, ratings, or other algorithms.
 
-## Key Functions
-- Describe the main functions for generating recommendations.
-- Include details on the recommendation algorithm(s) used.
-
-## Usage Examples
+## Usage Example
 
 
     def create_tfidf_matrix(self):
