@@ -22,4 +22,6 @@ This is how the data is generated
 movie_data = [generate_movie_metadata(movie_id) for movie_id in range(NUMBER_OF_MOVIES)]
 movie_df = pd.DataFrame(movie_data)
 movie_df.to_csv('movie_metadata.csv', index=False)
+
+
 ...
