@@ -9,5 +9,4 @@
 Run the `setup.py` script to set up the initial database and environment:
 
 ```python
-
 python setup.py
