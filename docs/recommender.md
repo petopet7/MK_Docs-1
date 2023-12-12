@@ -10,7 +10,6 @@ The `recommender.py` module contains logic for recommending movies to users base
 
 ## Usage Examples
 
-```python
 
     def create_tfidf_matrix(self):
         # Assuming that you want to calculate similarity based on the movie titles
