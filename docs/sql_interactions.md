@@ -3,19 +3,9 @@
 ## Introduction
 `sql_interactions.py` manages direct SQL interactions, such as complex queries, updates, or batch operations that are not handled by the `database.py` module.
 
-## Key Functions
-- Detail any specific SQL operations or utility functions provided.
-- Include examples of complex queries and their use cases.
-
 ## Usage 
 
-    import sqlite3
-    import logging 
-    import pandas as pd
-    import numpy as np
-    import os
-    from ..logger import CustomFormatter
-
+    
     logger = logging.getLogger(os.path.basename(__file__))
     logger.setLevel(logging.DEBUG)
     ch = logging.StreamHandler()
