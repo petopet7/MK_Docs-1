@@ -13,11 +13,11 @@
     ch.setFormatter(CustomFormatter())
     logger.addHandler(ch)
 
-    class SqlHandler:
+class SqlHandler:
     """
-    A class to handle common SQL operations using sqlite3.
+A class to handle common SQL operations using sqlite3.
 
-    Attributes
+Attributes
     ----------
     dbname : str
         The name of the database.
@@ -28,7 +28,7 @@
     cursor : sqlite3.Cursor
         The cursor object for the database.
 
-    Methods
+Methods
     -------
     close_cnxn()
         Closes the database connection.
@@ -47,14 +47,14 @@
     """
     def __init__(self, dbname:str,table_name:str) -> None:
         """
-        Constructs all the necessary attributes for the SqlHandler object.
+Constructs all the necessary attributes for the SqlHandler object.
 
         Parameters
         ----------
         dbname : str
-            The name of the database file without the extension.
+The name of the database file without the extension.
         table_name : str
-            The name of the table to perform operations on.
+The name of the table to perform operations on.
         """
         self.cnxn=sqlite3.connect(f'{dbname}.db')
         self.cursor=self.cnxn.cursor()
@@ -63,7 +63,8 @@
 
     def close_cnxn(self)->None:
         """
-        Commits changes and closes the database connection.
+Commits changes and closes the database connection.
+
         """
 
         logger.info('commiting the changes')
@@ -73,12 +74,13 @@
 
     def insert_one(self, data_to_insert: dict) -> None:
         """
-        Inserts a single record into the table.
+Inserts a single record into the table.
 
         Parameters
         ----------
         data_to_insert : dict
-            A dictionary where keys are column names and values are the corresponding data to insert.
+ A dictionary where keys are column names and values are the corresponding data to insert.
+            
         """
         columns = ', '.join(data_to_insert.keys())
         placeholders = ', '.join(['?'] * len(data_to_insert))
@@ -121,12 +123,12 @@
 
     def insert_many(self, df:pd.DataFrame) -> str:
         """
-        Inserts multiple records into the table from a DataFrame.
+Inserts multiple records into the table from a DataFrame.
 
         Parameters
         ----------
         df : pd.DataFrame
-            The DataFrame containing the records to be inserted.
+The DataFrame containing the records to be inserted.
 
         Returns
         -------
@@ -174,7 +176,7 @@
         
         def from_sql_to_pandas(self) -> pd.DataFrame:
             """
-            Reads data from the SQL table and returns a pandas DataFrame.
+Reads data from the SQL table and returns a pandas DataFrame.
 
             Returns
             -------
@@ -188,7 +190,7 @@
 
     def from_sql_to_pandas(self, chunksize:int, id_value:str) -> pd.DataFrame:
         """
-        Reads data from the SQL table in chunks and returns a single DataFrame.
+Reads data from the SQL table in chunks and returns a single DataFrame.
 
         Parameters
         ----------
@@ -200,7 +202,9 @@
         Returns
         -------
         pd.DataFrame
-            The DataFrame containing all the data from the table.
+        
+The DataFrame containing all the data from the table.
+       
         """
         
         offset=0
@@ -229,7 +233,7 @@
 
     def update_table(self, set_values: dict, condition: str) -> None:
         """
-        Updates records in the table based on a condition.
+Updates records in the table based on a condition.
 
         Parameters
         ----------
