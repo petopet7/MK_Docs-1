@@ -26,11 +26,12 @@
 
     Base= declarative_base()
 
-    # Define the RatingsSmall table
+Define the RatingsSmall table
+
     class Rating(Base):
     
     """
-    Representation of the Ratings_small table, storing user ratings of movies.
+Representation of the Ratings_small table, storing user ratings of movies.
 
     Attributes
     ----------
@@ -47,7 +48,8 @@
     movie_id = Column(Integer, ForeignKey('MovieMetadata.movie_id'), primary_key=True)
     rating = Column(Float)
 
-    # Define the MovieMetadata table
+ Define the MovieMetadata table
+ 
     class MovieMetadata(Base):
     """
     Representation of the MovieMetadata table, storing metadata about movies.
@@ -86,7 +88,8 @@
     keywords = relationship("Keywords", back_populates="movie")
     links_small = relationship("LinksSmall", back_populates="movie")
 
-    # Define the Credits table
+Define the Credits table
+
     class Credits(Base):
     """
     Representation of the Credits table, storing information about the cast and crew of movies.
@@ -108,7 +111,8 @@
 
     movie = relationship("MovieMetadata", back_populates="credits")
 
-    # Define the Keywords table
+Define the Keywords table
+
     class Keywords(Base):
     """
     Representation of the plot_keywords table, storing keywords associated with the plot of movies.
@@ -128,7 +132,7 @@
 
     class User(Base):
     """
-    Representation of the User table, storing information about users.
+Representation of the User table, storing information about users.
 
     Attributes
     ----------
@@ -151,14 +155,14 @@
     email = Column(String)
     age = Column(Integer)
     
-    # Define other user-related attributes here
+Define other user-related attributes here
 
     ratings = relationship("RatingsSmall")
 
 
     class InOut(Base):
     """
-    Representation of the InOut table, storing input movie names and corresponding output recommendations.
+Representation of the InOut table, storing input movie names and corresponding output recommendations.
 
     Attributes
     ----------
@@ -174,7 +178,8 @@
     input_movie = Column(String)
     output_recommendations = Column(String)
 
-    # Relationship to MovieMetadata
+ Relationship to MovieMetadata
+ 
     movie = relationship("MovieMetadata")
 
     Base.metadata.create_all(engine)
