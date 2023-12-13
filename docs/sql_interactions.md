@@ -30,20 +30,20 @@ Attributes
 
 Methods
     -------
-    close_cnxn()
-        Closes the database connection.
-    get_table_columns()
-        Retrieves the column names from the table.
-    truncate_table()
-        Deletes all records from the table.
-    drop_table()
-        Drops the table from the database.
-    insert_many(df)
-        Inserts multiple records from a DataFrame into the database table.
-    from_sql_to_pandas(chunksize, id_value)
-        Loads data from the SQL table into a pandas DataFrame in chunks.
-    update_table(condition)
-        Updates records in the table based on a condition.
+close_cnxn() - Closes the database connection.
+    
+get_table_columns() - Retrieves the column names from the table.
+    
+truncate_table() - Deletes all records from the table.
+    
+drop_table() - Drops the table from the database.
+    
+insert_many(df) - Inserts multiple records from a DataFrame into the database table.
+    
+from_sql_to_pandas(chunksize, id_value) - Loads data from the SQL table into a pandas DataFrame in chunks.
+    
+update_table(condition) Updates records in the table based on a condition.
+    
     """
     def __init__(self, dbname:str,table_name:str) -> None:
         """
