@@ -70,8 +70,7 @@ Run this line to install our package
 
 # Movie Recommendation System Schema Setup
 
-**This code demonstrates the setup and schema definition for a movie recommendation system using SQLAlchemy, a Python SQL toolkit and Object-Relational Mapping (ORM) library.
-**
+**This code demonstrates the setup and schema definition for a movie recommendation system using SQLAlchemy, a Python SQL toolkit and Object-Relational Mapping (ORM) library.**
 
     from etl.data_preperation.schema import *
 
