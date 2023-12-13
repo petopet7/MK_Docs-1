@@ -1,11 +1,5 @@
 # Schema
-
-## Introduction
-This module defines the schema for the movie database, including tables, fields, and relationships between different entities.
-
-## Key Components
-- Describe each table and its fields.
-- Explain the relationships (e.g., foreign keys) between tables.
+![image](https://github.com/petopet7/MK_Docs-1/assets/146641668/87d51b4d-323e-439a-9e0a-e69c59dab76a)
 
 ## Usage
 
