@@ -151,3 +151,8 @@ Run this line to install our package
 
     server_thread = threading.Thread(target=run_server)
     server_thread.start()
+
+After this steps copy the host link and paste it in the search bar adding "docs" after it.
+There are different functionalities in the FASTAPI page.
+We can CREATE a movie, UPDATE a movie, delete a movie in our data. Also there is a function to get recommendation based on the imput of a movie name.
+
